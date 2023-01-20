@@ -1,0 +1,25 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.movie-card img{
+    height: 400px;
+    width: 250px;
+    border-radius: 15px;
+}
+.movie-card h2{
+    margin-top: 2px;
+    margin-bottom: -10px;
+}
+.movie-card p{
+    color: rgb(90, 90, 90);
+}
+.movie-card{
+    padding: 10px;
+    margin: 5px;
+}
