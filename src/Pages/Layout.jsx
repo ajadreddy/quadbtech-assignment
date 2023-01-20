@@ -1,4 +1,5 @@
 import React,{useEffect,useState} from 'react'
+import {Link} from 'react-router-dom'
 import './Layout.css'
 import axios from 'axios'
 const Layout = () => { 
@@ -29,7 +30,7 @@ const Layout = () => {
                         <img  src={movie.show.image.original} alt="" />
                         <h2>{movie.show.name}</h2>
                         <p>{movie.show.genres[0]}/{movie.show.genres[1]}</p>
-                        <a href="/">Summary</a>
+                        <Link to={`/summary/${movie.show.id}`} style={{ fontWeight: "bold" }} >See Summary</Link>
                     </div>    
                 )
             })
